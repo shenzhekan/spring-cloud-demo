@@ -13,7 +13,7 @@ public class TestEurekaService {
 
     private String eurekaServer = "http://EUREKA-CLIENT";
 
-    @RequestMapping("/test")
+    @RequestMapping("/testService")
     public void test(){
         String msg = restTemplate.getForObject(eurekaServer+"/test", String.class);
         System.out.println(msg);
